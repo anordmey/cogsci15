@@ -11,7 +11,7 @@
 \usepackage{color}
 
 
-\title{Something about felicity judgments and negative sentences and context}
+\title{(title-in-progress:) Felicity ratings of negative sentences in context}
  
 \author{{\large \bf Ann E. Nordmeyer} \\ \texttt{anordmey@stanford.edu}\\ Department of Psychology \\ Stanford University \\ 
 \And {\large \bf Michael C. Frank} \\ \texttt{mcfrank@stanford.edu} \\ Department of Psychology \\ Stanford University \\ }
@@ -30,26 +30,23 @@ Negation; felicity judgments; pragmatics
 
 \section{Introduction}
 
-Experiment 1 shows that context effect persists across different uses/types of negation.
+Intro outline:
+Negation as a case study to understand effects of context
 
-Experiment 2 shows that particular context is effective (setting up an expectation that is violated).
+Previous work on the role of context in processing of negation
+	- discuss reaction time work (mine and others)
+	- eyetracking work (mine) -- introduces idea of different types of negative sentences (nonexistence vs. alternative) and that these two types of negation might be processed differently (sets up study 1).
 
-Experiment 3: presence/absence of target item doesn't have an effect.   
+Our /model; why we think context has this effect (eg. informativeness)
 
-Punchy intro paragraph.
-
-
-Talk about negation \& why it is interesting/important.
-
-Talk about the role of context in processing negation.
-
-Talk about our thoughts about why context has this effect.
-
-Talk about what we are missing: explicit ratings from people.  What do we gain from this?  We can 1) get clearer ratings than we can get with a noisy measure like reaction time, and 2) evidence that this is an explicit preference that people have (for negative sentences in supportive contexts) and not simply an implicit bias (???)
-
+Why we did this study.
 \section{Study 1}
 
-Study 1 explored the effects of multiple factors on the felicity judgments of negative sentences.  Half of the participants in Study 1 saw sentences presented within a strong context (e.g. one where all of the context characters had the negated object), and the other half saw sentences presented within a weak context (e.g. one where none of the context characters had any objects).  This manipulation has been shown to influence reaction times to evaluate negative sentences \cite{nordmeyer2014}; here we test whether context changes explicit felicity judgments as well.  We also tested two within-subjects factors that might influence negative sentence judgments.  First, we looked at how different syntactic framings might influence sentence judgments.  In our previous work on the effects of context on reaction time, we tested sentences such as ``X has no Y''.  In this experiment, we also tested sentential negation, using sentences such as ``X doesn't have Y''.  We were interested in whether participants had a preference for one framing over another, and whether this would interact with context.  If previously seen context effects are driven by the informativeness of negation in different contexts, then these same effects should appear regardless of the syntactic framing of the sentences.  Finally, we examined whether the type of negation influenced felicity ratings.  In half of the true negative trials, the referent of the negative sentence was a character who had nothing.  In these sentences, the negation refers to the \emph{nonexistence} of the named item.  In the other half of true negative trials, the referent of the sentence was a character who had some other object.  In these sentences, the negation refers to the fact that the character has an \emph{alternative} object.  Previous work suggests that children and adults show different gaze patterns in response to these different types of negative sentences \cite{nordmeyer2014b}; here we explore whether adults' have a preference for the type of negation expressed in different negative sentences.
+Study 1 explored how different contexts affected participants felicity ratings for negative sentences.  Half of the participants in Study 1 saw sentences presented within a weak context (e.g. one where none of the context characters had any objects), and the other half saw sentences presented within a strong context (e.g. one where everyone in the context possessed the negated object).  Previous work has found that this context manipulation improves adults' processing of negative sentences \cite{nordmeyer2014}; here we test whether context changes explicit felicity judgments as well.  
+
+We also tested two within-subjects factors that might influence negative sentence ratings.  First, we looked at how different syntactic framings might influence sentence judgments.  In our previous work on the effects of context on reaction time, we tested sentences such as ``X has no Y''.  In this experiment, we also tested sentential negation, using sentences such as ``X doesn't have Y''.  We were interested in whether participants had a preference for one framing over another, and whether this would interact with context.  If previously seen context effects are driven by the informativeness of negation in different contexts, then these same effects should appear regardless of the syntactic framing of the sentences.  
+
+Finally, we examined whether the type of negation influenced felicity.  In half of the true negative trials, the referent of the negative sentence was a character who had nothing.  In these sentences, the negation refers to the \emph{nonexistence} of the named item.  In the other half of true negative trials, the referent of the sentence was a character who had some other object.  In these sentences, the negation refers to the fact that the character has an \emph{alternative} object.  Previous work suggests that children and adults show different gaze patterns in response to these different types of negative sentences \cite{nordmeyer2014b}; here we explore whether adults' have a preference for the type of negation expressed in different negative sentences.
 
 \subsection{Method}
 
@@ -92,7 +89,7 @@ True negative sentences were rated significantly higher when they were presented
 
 We ran a linear mixed-effects model testing the interaction between context, sentence type, and truth value on participant sentence ratings.\footnote{All mixed-effects models were fit using the lme4 package in R version 2.15.3.  The model specification was as follows: \texttt{rating $\sim$ context~$\times$~sentence~$\times$~truth + (sentence~$\times$~truth~\textbar~subject) +  (sentence~$\times$~truth~\textbar~item)}  Significance was calculated using the standard normal approximation to the $t$ distribution \cite{barr2013}. Data and analysis code can be found at \href{http://github.com/anordmey/FILLTHISIN}{http://github.com/anordmey/FILLTHISIN}}.  Results of this model showed a main effect of sentence type, with negative sentences receiving significantly lower ratings than positive sentences ($\beta= -.58$, $p< .01$), and a main effect of truth value, with false sentences scoring approximately four points lower on the 7-point scale compared to true sentences ($\beta= 4.19$, $p< .001$).  There was not a main effect of context ($\beta= -0.52$, $p=.12$), but there was a significant interaction between sentence type and context, with negative sentences scoring significantly higher when presented in a strong context compared to a weak context ($\beta= 2.04$, $p< .05$).  
 
-These results confirm that the effects of context seen in the sentence processing literature on reaction times to respond to positive and negative sentences are also present in participants' explicit felicity ratings.  Participants rated true negative sentences as better when the other characters in the context had the negated item.  For example, the sentence ``Abby has no apples'' was rated higher when all of the other characters \emph{had} apples, compared to contexts where all of the other characters had nothing.  
+These results confirm that the effects of context seen in the sentence processing literature are also manifested in participants' explicit felicity ratings.  Participants rated true negative sentences as better when the other characters in the context had the negated item.  For example, the sentence ``Abby has no apples'' was rated higher when all of the other characters \emph{had} apples, compared to contexts where all of the other characters had nothing.  (MORE HERE)
 
 \subsubsection{True negative sentences}
 
@@ -102,9 +99,12 @@ To test the reliability of these findings, we fit a linear mixed-effects model t
 
 The difference between the two negation sentence frames is likely due to frequency effects in the input (GET SOME DATA). 
 
-The fact that negative sentences expressing nonexistence were rated higher than negative sentences referring to an alternative property reflects previous findings from eye-tracking experiments testing the same difference \cite{nordmeyer2014}.  In that study, adults were marginally faster to look at the target of a negative sentence when that sentence referred to nonexistence compared to when the sentence referred to an alternative property.  These data suggest that this finding is not merely due to superficial differences in between the stimuli (e.g. it is easier to identify a character with nothing than a character with a different object), but perhaps because the nonexistence condition was more felicitous than the alternative condition.  (((NOTE: Is this too much of a stretch?))) One explanation for this finding is that negative sentences that refer to an alternative are more informative than negative sentences that refer to nonexistence.  Even in a strong context (e.g. one where all of the context characters have an apple), the sentence ``Abby doesn't have an apple'' is less informative when Abby has a different object (e.g. a cat), because there is a more informative alternative (e.g. ``Abby has a cat'').  When Abby has nothing, however, the sentence ``Abby doesn't have an apple'' is reasonably informative in a context where everyone else has apples, because it uniquely identifies Abby and there isn't a more informative alternative available.  
+The fact that negative sentences expressing nonexistence were rated higher than negative sentences referring to an alternative property reflects previous findings from eye-tracking experiments testing the same difference \cite{nordmeyer2014}.  In that study, adults were marginally faster to look at the target of a negative sentence when that sentence referred to nonexistence compared to when the sentence referred to an alternative property.  These data suggest that this finding is not merely due to superficial differences in between the stimuli (e.g. it is easier to identify a character with nothing than a character with a different object), but perhaps because the nonexistence condition was more felicitous than the alternative condition.  (((NOTE: Is this too much of a stretch?))) 
 
-((NEED A BETTER TRANSITION TO STUDY 2))
+One explanation for this finding is that a negative sentence such as ``Abby doesn't have an apple'' is more informative when Abby has nothing compared to when she has an alternative object.  In a strong context (e.g. one where everyone besides Abby has apples), using negation to point out Abby's lack of apples is informative, because it uniquely identifies her character in the array.  When Abby has some alternative object (e.g. a cat), however, there is a \emph{more} informative utterance that a speaker could use (e.g. ``Abby has a cat'').  The presence of a more informative utterance makes these negative sentences less felicitous, even when they appear in a strong context.
+
+
+((TRANSITION TO STUDY 2))
 
 
 \begin{figure}
@@ -138,11 +138,11 @@ The fact that negative sentences expressing nonexistence were rated higher than 
 
 \section{Study 2:}
 
-Study 1 found clear differences in participants' ratings of negative sentences.  Participants preferred negative sentences with the sentential framing ``doesn't have X'' compared to the lexical framing ``has no X''.  Participants also preferred negative sentences that referred to nonexistence (e.g. a negative sentence that refers to the complete absence of an object, rather than an alternative object).  Across both of these factors, negative sentences that were presented within a strong context (where everyone else in the context possessed the negated object) received higher ratings than negative sentences presented in a weak context, where none of the characters in the context possessed any object.
+Study 1 found clear differences in participants' ratings of negative sentences.  Participants preferred negative sentences with the sentential framing ``doesn't have X'' compared to the lexical framing ``has no X''.  Participants also preferred negative sentences that referred to nonexistence.  Across both of these factors, negative sentences that were presented within a strong context (where all context characters possessed the negated object) received higher ratings than negative sentences presented in a weak context, where none of the characters in the context possessed any object.
 
-In the next study, we further explore this context effect by focusing specifically on negation-as-alternative sentences with a ``doesn't have'' framing.  In Study 2, context was a within-subjects factor, so that participants saw multiple items of different context types throughout the experiment.  We examined the effect of three different types of context: a ``target'' context, in which all context characters had the negated target object (identical to the strong context in Study 1), a ``none'' context, in which none of the context characters had any objects (identical to the weak context in Study 1), and a ``foil'' context, in which all context characters had an alternative object (e.g. a different object than the one negated in the negative sentences). 
+In the next study, we further explore this context effect by focusing specifically on negation-as-alternative sentences with a ``doesn't have'' framing.  In Study 2, we made context a within-subjects factor, so that participants saw multiple items of different context types throughout the experiment.  We examined the effect of three different types of context: a ``target'' context, in which all context characters had the negated target object (identical to the strong context in Study 1), a ``none'' context, in which none of the context characters had any objects (identical to the weak context in Study 1), and a ``foil'' context, in which all context characters had an alternative object (e.g. a different object than the one negated in the negative sentences). 
 
-In Study 2, we expected to replicate the same difference between the none context and the target context as was seen in Study 1: Negative sentences presented in a target context should receive higher ratings than negative sentences presented in a none context.  We had multiple hypotheses about the foil context.  In true negative trials with a foil context, all characters (including the target character) had the same objects on their table (e.g. cats), and the negative sentence referred to a different object (e.g. ``X doesn't have apples'').  Some previous work has suggested that a critical element of the effect of context on negative sentences is the fact that the referent of the negative sentence is the ``odd one out'' \cite{wason1965}.  If this is the case, the foil context might be even worse than the none context, because the target of the negative sentence does not stand out from the context.  If, however, the mechanism by which context influences negation is the fact that context changes the informativeness of negation, then there should be no difference between the foil and none contexts, because negative sentences are no less informative in the foil context.  
+We expected to replicate the same difference between the none context and the target context as was seen in Study 1: Negative sentences presented in a target context should receive higher ratings than negative sentences presented in a none context.  We had two competing predictions about the foil context ((NOTE: I actually didn't articulate this until after running the experiments, but I think it works as a possible alternative hypothesis.  Is it OK to set this up like this))).  In true negative trials with a foil context, all characters (including the target character) had the same objects on their table (e.g. cats), and the negative sentence referred to a different object (e.g. ``X doesn't have apples'').  Some previous work has suggested that a critical element of the effect of context on negative sentences is the fact that the referent of the negative sentence is the ``odd one out'' \cite{wason1965}.  If this is the case, the foil context might be even worse than the none context, because the target of the negative sentence does not stand out from the context.  If, however, the mechanism by which context influences negation is the fact that context changes the informativeness of negation, then there should be no difference between the foil and none contexts, because negative sentences are no less informative in the foil context.  
 
 \subsection{Method}
 
@@ -164,7 +164,7 @@ The procedure was identical to Study 1.
 We excluded from analysis four participants who did not list English as their native language, six participants for having participated in a previous pilot study, and 34 participants for using fewer than 3 points on the scale.  Thus, data from a total of 154 participants were analyzed.  
 
 \subsection{Results \& Discussion}
-True negative sentences were rated significantly higher when they were presented in a strong target context compared to either the none context or the foil context (see Figure \ref{fig:modelvdata}).  There was no difference between sentences presented in the none context condition vs the foil context condition, nor was there any effect of context on true positive sentences or false sentences.  
+True negative sentences were rated significantly higher when they were presented in a strong target context compared to either the none context or the foil context (see Figure \ref{fig:modelvdata}).  Negative sentences presented in a foil context received a very small increase in ratings compared to negative sentences presented in a none context ((NOTE: I'm in a weird position here where it REALLY does not look like there is a significant difference here (I actually initially wrote that there WASN'T a difference), but it does show up as marginally significant in my data (and actually significant if I run a model on just the true sentences, which I don't report here but did on my own).  So I feel weird describing this as an actual difference in this first paragraph, but it does show up in my data -- and also in my model -- so I feel like I should?))).  As in Study 1, there was no effect of context on true positive sentences or false sentences.  
 
 We fit a linear mixed-effects model to sentence ratings to test the interaction between context, sentence type, and truth value.\footnote{ The model specification was as follows: \texttt{rating $\sim$ context~$\times$~sentence type~$\times$~truth value + (sentence type~$\times$~truth value~\textbar~subject) +  (sentence type~$\times$~truth value~\textbar~item)}}  Coefficients for this model can be seen in Table \ref{tab:s2}.  We found a significant effect of truth value, with true sentences receiving significantly higher ratings than false sentences, ($\beta= 5.01$, $p< .001$).  A significant interaction between sentence type and truth value indicates that true negative sentences received lower ratings than true positive sentences, ($\beta= -1.78$, $p< .001$).  Finally, a three-way interaction between between sentence type, truth value, and context was significant for the target context ($\beta= 1.08$, $p< .001$), and marginally significant for the foil context ($\beta= .34$, $p=.06$), indicating that true negative sentences received significantly higher ratings in the target context compared to the none context, and slightly higher ratings in the foil context compared to the none context.  
 
@@ -246,7 +246,7 @@ P(w | r_s, C) = \frac{ e^{\log(|w|^{-1}) - D(w)}} {\sum_{w' \in V}{e^{\log(|w'|^
 \end{center} 
 \end{figure}
 
-
+DISCUSS THINGS HERE.
 
 \section{General Discussion}
 
