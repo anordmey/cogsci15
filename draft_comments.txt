@@ -1,0 +1,50 @@
+Hi Ann,
+
+Thanks for sharing the cogsci paper!
+
+
+Comments:
+
+- I played with a couple of titles here.
+
+- The abstract is generally good, but I would try to reduce the dependence on prior work in the setup. Pitch this as a free-standing paper, not as a necessary followup to previous studies. Another way to put this is that a number of experiments show contextual effects on negation. But these studies don't alone help us understand what contexts license negation, or integrate across different types of negation. we explore the hypothesis that the contextual informativeness of negation (relative to alternatives) determines its felicity in context. 
+
+- More generally, I think it'd be useful to sharpen the motivating question of the paper
+
+- "An important aspect of human communication is how speak- ers use language and how listeners interpret their intended meaning." - Maybe I would just cut this? I proposed a revision to the first three paragraphs. 
+
+- The "type of negation" paragraph didn't work for me because I didn't quite understand where it was going. Maybe you could try and motivate why you're telling us about negation types? I don't really know how alternative and non-existence negation (better to say "alternative negation" than "negation-as-alternative," no?) fits in with the nonexistence, rejection, denial typology? So I might even drop that from the paper? 
+
+- Would be nice to put something in the intro about the relationship between felicity and processing time.
+
+** It might be useful to give a concrete illustration of the experimental conditions, e.g. with a table listing the different types tested in E1? I added some text to the figure caption to explain nonexistence. Similarly, picturing the contexts in E2 would be good. I think following this stuff will be hard for readers. There is definitely space if you clean up the E1 results and cut some of the type stuff in the intro...
+
+** the terminology "strong" and "weak" is not introduced - and it took me quite a while to figure out that it mapped onto "context" and "no context" - this is important to fix, in conjunction with the table perhaps?
+
+- I did some reorg of the results from E1, trying to focus it in on particular questions of interest. It's not quite right but I think it's a little better. I see why you did it the way you did, but I think the question-focused version is a bit more compelling in a shorter paper... Actually, what's the point of the model across all sentence types? Could you just cut that and flatten the E1 results? 
+
+- Like the idea of putting in frequency data for the sentence types.
+
+- I liked the link back to the nonexistence/alternative contrast in the adult eye-tracking - I edited that paragraph, though...
+
+- "One explanation for this finding is that a negative sentence " -> this paragraph in the E1 results didn't totally work for me - I wasn't sure why you were focusing in here on a particular finding, and I wasn't sure what the finding was. In general, trying to refer to the findings by their factor names - e.g. context, negation type, and sentence type - might help. Also, maybe introducing the idea that there is a pragmatic intuition there might be useful? 
+
+- I like the two hypotheses in the preamble to Experiment 2.
+
+- Is it necessary to reiterate the experimental data in the model figure? I would say no... Instead, I'd give a separate plot for E2.
+
+- I cut down some model stuff.
+
+- Re: your question about how much to emphasize the model. I would say that this is a paper about the pragmatic felicity of negation in context, see e.g. my title suggestions. The  model is one part of making the case that pragmatics is responsible for the felicity of different negations in context. So I wouldn't go to town on the model part, but rather emphasize the pragmatic point (as I did in my intro edits) and say that the model formalizes and confirms these pragmatic intuitions. That make sense?
+
+Minor:
+
+- Study -> Experiment. I would use study only for cases where there is no manipulation, e.g. no random assignment (observational). 
+
+- APA requires punctuation within quotes. I know some people don't like that ...
+
+- I tend to prefer M-dashes with no spaces to N-dashes with spaces (a---b rather than a -- b).
+
+- Spell out numbers until nine, then use numerals for 10 and above.
+
+- & -> "and" unless there is some explicit reason not to...
