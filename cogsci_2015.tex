@@ -41,8 +41,6 @@ Much of the literature on how people use different types of negation has focused
 
 Why might different contexts influence the processing of negation?  According to Grice's Cooperative Principle \cite{grice1975}, speakers should produce utterances that are truthful, relevant, and informative.  In previous work, we demonstrated that negative sentences are more informative in contexts that set up a strong expectation that is violated, and that this difference in informativeness can predict adults' reaction times to respond to negative vs. positive sentences \cite{nordmeyer2014}.  In this paper, we explore the effects of context on adults' explicit felicity judgments for different types of negative sentences.  In Study 1, we test the effect of a strong vs. a weak context on two different types of negative sentences: negation-as-nonexistence and negation-as-alternative.  We also tested two different negative sentence frames: ``has no'' and ``doesn't have''.  We found that negative sentences presented in a strong context were rated higher than negative sentences in a weak context, and that negation-as-nonexistence sentences were rated higher than negation-as-alternative sentences.  In Study 2, we focused on negation-as-alternative trials to further explore how context influences the felicity of these sentences.  We found that these sentences are rated higher when they were presented in a context where all of the other characters possessed the negated object, compared to contexts where the other characters possessed the alternative object or no object.  Finally, we found that a model of the informativeness of sentences in context predicted the same qualitative pattern seen in our data, suggesting that adults' felicity judgments reflect preferences for sentences that are more informative given the context.
 
-
-Why we did this study.
 \section{Study 1}
 
 Study 1 explored how different contexts affected participants felicity ratings for negative sentences.  Half of the participants in Study 1 saw sentences presented within a weak context (e.g. one where none of the context characters had any objects), and the other half saw sentences presented within a strong context (e.g. one where everyone in the context possessed the negated object).  Previous work has found that this context manipulation improves adults' processing of negative sentences \cite{nordmeyer2014}; here we test whether context changes explicit felicity judgments as well.  
@@ -205,34 +203,14 @@ DISCUSSION HERE
 
 Studies 1 and 2 explored the effects of context on different types of negative sentences.  Both studies found a significant effect of context on participants' ratings of true negative sentences.  Why does context have this effect on negative sentences?  One possibility is that felicity ratings are influenced by the \emph{informativeness} of negative sentences.  According to \citeNP{grice1975}, speakers should produce sentences that are appropriately informative based on the context.  In a context where most characters have apples and another character has a cat, it is informative to mention the ``odd character out'' by describing the cat, because this feature is unique to the character being described.
 
-Previous work suggests that listeners expect speakers to produce informative utterances \cite{frank2012}, and that this can predict adults' speed to evaluate negative sentences \cite{nordmeyer2013}.  Here, we use the same model to explore whether participants' felicity judgments can be predicted by the informativeness of those sentences in context.  We focus on true negative sentences here, because the ceiling effect for true positive sentences and the floor effect for negative sentences make it difficult to consider the effect of context on these sentences.  
+Previous work suggests that listeners expect speakers to produce informative utterances \cite{frank2012}, and that this can predict adults' speed to evaluate negative sentences \cite{nordmeyer2013}.  Here, we use the same model to explore whether participants' felicity judgments reflect a preference for sentences that are more informative based on the context.  We focus on true negative sentences here, because the ceiling effect for true positive sentences and the floor effect for negative sentences make it difficult to consider the effect of context on these sentences.  
 
-((NOTE: CHANGE THIS: Describe more generally))
-We modeled the behavior of participants in our experiments by assuming that participants' felicity judgments are proportional to the probability of the utterance $w$, given the context $C$ and the speaker's intended referent $r_S$:
+We calculate the probability of an utterance in context as proportional to the informativeness of the word in context minus its cost.  Informativeness in context is calculated as the number of bits of information conveyed by the utterance.  We assume that the utterance has a uniform probability distribution over its extension in context (e.g.\ ``doesn't have apples'' applies to any character who does not have apples, leading to a probability of $1/|w|$ of picking out each individual character with apples). We defined cost as the number of words in the utterance multiplied by a cost-per-word parameter; in our simulations, we did not differentiate between different negative sentence frames, and treat negative sentences as having one word more than positive sentences.  Probabilities were normalized over a sparse vocabulary of possible positive or negative utterances that could be used to describe the characters.
 
-\noindent We then define the probability of the utterance as proportional to its utility (following \citeNP{frank2012}):
+Results of this simulation can be seen in the bottom panel of Figure \ref{fig:modelvdata}.  Our model predicted the same qualitative pattern as the data from participants' sentence ratings.  Sentences presented in a target context are preferred over sentences presented in a none context, because true negative utterances are more informative when everyone in the context possesses the negated object (i.e. the sentence ``Abby doesn't have apples'' uniquely identifies Abby when every other character \emph{does} have apples).  Negation-as-nonexistence utterances are higher probability than negation-as-alternative utterances, because the negation-as-alternative trials could be described by an equally informative and less costly utterance (e.g. ``Abby has cats'' instead of ``Abby doesn't have apples'').  This suggests that participants' sentence ratings are influenced at least in part by the how the informativeness of the sentences changes depending on the context.  
 
-\begin{equation}\label{eq:pw1}
-P(w | r_s, C) \propto  e^{U(w;r_s,C)},
-\end{equation} 
-
-\noindent This utility is defined as the informativeness of $w$ minus its cost $D(w)$:
-
-\begin{equation}\label{eq:utility}
-U(w;r_s,C) = I(w;r_s, C) - D(w).
-\end{equation}
-
-\noindent Informativeness in context is calculated as the number of bits of information conveyed by the word. We assume that $w$ has a uniform probability distribution over its extension in context (e.g.\ ``has apples'' applies to any character who has apples, leading to a probability of $1/|w|$ of picking out each individual character with apples) :
-
-\begin{equation}\label{eq:info}
-I(w;r_s, C) = -(-\log(|w|^{-1})).
-\end{equation}
-
-We created a sparse vocabulary which represented possible words to describe the characters.  This included the target utterance (e.g.\ ``has apples'' and ``doesn't have apples''), an utterance referring to the alternative item (e.g. ``has cats''/``doesn't have cats''), as well as words that were uniformly true or false of all characters. Normalizing Eq.\ \ref{eq:pw1} over all possible words in the vocabulary $V$, we have:
-
-\begin{equation}\label{eq:pw2}
-P(w | r_s, C) = \frac{ e^{\log(|w|^{-1}) - D(w)}} {\sum_{w' \in V}{e^{\log(|w'|^{-1}) - D(w')}}}.
-\end{equation}
+((NOTE: I'm not sure how much of a big deal I want to make about this last section, and our predictions about informativeness being the driving force behind these data in general.  I'm wondering about this throughout my paper (e.g. do I want to take a strong stance on this at the beginning?  In the title?) and in particular I'm wondering how much I should focus on this in the general discussion)))
+ 
 
 \begin{figure}
 \begin{center} 
@@ -241,7 +219,6 @@ P(w | r_s, C) = \frac{ e^{\log(|w|^{-1}) - D(w)}} {\sum_{w' \in V}{e^{\log(|w'|^
 \end{center} 
 \end{figure}
 
-DISCUSS THINGS HERE.
 
 \section{General Discussion}
 
