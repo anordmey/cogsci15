@@ -1,4 +1,4 @@
-The pragmatics of negation across contexts
+cogsci15
 =================
 
 Repository with Nordmeyer & Frank Cognitive Science Society submission for 2015.
